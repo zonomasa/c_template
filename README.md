@@ -1,5 +1,8 @@
 c_template
 ==========
+
+Summary
+-------
  * Template files for C lang development.
    * Makefile
    * Using Shrared library

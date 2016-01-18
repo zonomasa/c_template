@@ -9,16 +9,19 @@
 
 #include "library.h"
 
-int
-lib_func01(){
+
+/**
+ * @brief Library function01.
+ * @return Constantly returns 1.
+ */
+int lib_func01(){
     return 1;
 }
 
 /**
- * @return Return value.
- *
+ * @brief Library function02.
+ * @return Constantly returns 2.
  */
-int
-lib_func02(){
+int lib_func02(){
     return 2;
 }

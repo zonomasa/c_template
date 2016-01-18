@@ -17,15 +17,22 @@
 void test_func01_OK();
 void test_func01_NG();
 
+
+/**
+ * @test case for lib_func01
+ */
 void
 test_func01_OK(){
     CU_ASSERT_EQUAL(lib_func01(),1);
     return;
 }
 
+/**
+ * @test case for lib_func02
+ */
 void
-test_func01_NG(){
-    CU_ASSERT_EQUAL(lib_func01(),1);
+test_func02_OK(){
+    CU_ASSERT_EQUAL(lib_func02(),2);
     return;
 }
 
@@ -37,7 +44,7 @@ main()
     CU_initialize_registry();
     base_suite = CU_add_suite("Base functions", NULL, NULL);
     CU_add_test(base_suite, "func01_OK", test_func01_OK);
-    CU_add_test(base_suite, "func01_NG", test_func01_NG);
+    CU_add_test(base_suite, "func02_OK", test_func02_OK);
     CU_console_run_tests();
     CU_cleanup_registry();
 
